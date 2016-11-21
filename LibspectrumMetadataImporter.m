@@ -47,7 +47,7 @@ static int
 mmap_file( const char *filename, unsigned char **buffer, size_t *length )
 {
   int fd; struct stat file_info;
-  
+
   if( ( fd = open( filename, O_RDONLY ) ) == -1 ) {
     NSLog(@"LibspectrumMetadataImporter: couldn't open `%s': %s\n", filename,
              strerror( errno ) );
@@ -187,7 +187,7 @@ process_tape
   if( error != LIBSPECTRUM_ERROR_NONE ) {
     return NO;
   }
-  
+
   [attributes setObject:[NSNumber numberWithInt:1]
                  forKey:(NSString *)kMDItemAudioChannelCount];
 
@@ -373,16 +373,16 @@ process_tape
 
     case LIBSPECTRUM_TAPE_BLOCK_CUSTOM:
       break;
-      
+
     case LIBSPECTRUM_TAPE_BLOCK_RLE_PULSE:
       break;
-      
+
     case LIBSPECTRUM_TAPE_BLOCK_GENERALISED_DATA:
       break;
-            
+
     case LIBSPECTRUM_TAPE_BLOCK_PULSE_SEQUENCE:
       break;
-        
+
     case LIBSPECTRUM_TAPE_BLOCK_DATA_BLOCK:
       break;
 
@@ -647,9 +647,39 @@ process_dck
 process_opd
 {
   BOOL error = NO;
-    
+
   /* FIXME: size, %full?, read-only vs read-write etc? */
-    
+
+  return error;
+}
+
+- (BOOL)
+process_plusd
+{
+  BOOL error = NO;
+
+  /* FIXME: size, %full?, read-only vs read-write etc? */
+
+  return error;
+}
+
+- (BOOL)
+process_generic
+{
+  BOOL error = NO;
+
+  /* FIXME: size, %full?, read-only vs read-write etc? */
+
+  return error;
+}
+
+- (BOOL)
+process_auxilliary
+{
+  BOOL error = NO;
+
+  /* FIXME: size, %full?, read-only vs read-write etc? */
+
   return error;
 }
 
@@ -657,9 +687,9 @@ process_opd
 process_d80
 {
   BOOL error = NO;
-  
+
   /* FIXME: size, %full?, read-only vs read-write etc? */
-  
+
   return error;
 }
 
@@ -696,13 +726,13 @@ process_hdr
 - (id)initWithFilename:(NSString*)aFile andAttributes:(NSMutableDictionary*)aDict
 {
   self = [super init];
- 
+
   filename = aFile;
   attributes = aDict;
 
   libspectrum_init();
   libspectrum_error_function = libspectrum_importer_error_function;
-  
+
   return self;
 }
 
@@ -720,7 +750,7 @@ process_hdr
   if( libspectrum_identify_file( &type, fsrep, buffer, length ) ) {
     munmap( buffer, length );
     return NO;
-  } 
+  }
 
   if( libspectrum_identify_class( &lsclass, type ) ) {
     munmap( buffer, length );
@@ -777,9 +807,21 @@ process_hdr
   case LIBSPECTRUM_CLASS_DISK_OPUS:
     retval = [self process_opd];
     break;
-          
+
   case LIBSPECTRUM_CLASS_DISK_DIDAKTIK:
     retval = [self process_d80];
+    break;
+
+  case LIBSPECTRUM_CLASS_DISK_PLUSD:
+    retval = [self process_plusd];
+    break;
+
+  case LIBSPECTRUM_CLASS_DISK_GENERIC:
+    retval = [self process_generic];
+    break;
+
+  case LIBSPECTRUM_CLASS_AUXILIARY:
+    retval = [self process_auxilliary];
     break;
 
   default:

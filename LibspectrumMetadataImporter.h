@@ -46,6 +46,11 @@
 - (BOOL) process_dsk;
 - (BOOL) process_scr;
 - (BOOL) process_rzx;
+- (BOOL) process_opd;
+- (BOOL) process_plusd;
+- (BOOL) process_d80;
+- (BOOL) process_generic;
+- (BOOL) process_auxilliary;
 - (BOOL) process_snap2:(libspectrum_snap *)snap;
 
 @end
