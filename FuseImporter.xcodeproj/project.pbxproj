@@ -13,6 +13,7 @@
 		B60E533C082720EC00F2C004 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E533B082720EC00F2C004 /* GetMetadataForFile.m */; };
 		B61617260C1CE2980009ADF9 /* csw.c in Sources */ = {isa = PBXBuildFile; fileRef = B61617250C1CE2980009ADF9 /* csw.c */; };
 		B616172A0C1CE2A50009ADF9 /* wav.c in Sources */ = {isa = PBXBuildFile; fileRef = B61617290C1CE2A50009ADF9 /* wav.c */; };
+		B6168CE71F0BBD83008C99E6 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = B6168CE61F0BBD83008C99E6 /* buffer.c */; };
 		B61E31AF0E925C66008097AC /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = B61E31AE0E925C66008097AC /* memory.c */; };
 		B61E31B30E925C73008097AC /* garray.c in Sources */ = {isa = PBXBuildFile; fileRef = B61E31B20E925C73008097AC /* garray.c */; };
 		B62C1CD00B761515000BA4E0 /* symbol_table.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C1CCF0B761515000BA4E0 /* symbol_table.c */; };
@@ -120,6 +121,7 @@
 		B60E533B082720EC00F2C004 /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		B61617250C1CE2980009ADF9 /* csw.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = csw.c; sourceTree = "<group>"; };
 		B61617290C1CE2A50009ADF9 /* wav.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = wav.c; sourceTree = "<group>"; };
+		B6168CE61F0BBD83008C99E6 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
 		B61E31AE0E925C66008097AC /* memory.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
 		B61E31B20E925C73008097AC /* garray.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = garray.c; sourceTree = "<group>"; };
 		B62C1CCF0B761515000BA4E0 /* symbol_table.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = symbol_table.c; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				B6BF2A570A5FFE7200D16624 /* tape_accessors.txt */,
 				B6BF2A550A5FFE6600D16624 /* snap_accessors.txt */,
 				B6BF29F10A5FFC9700D16624 /* myglib */,
+				B6168CE61F0BBD83008C99E6 /* buffer.c */,
 				B6BF29FE0A5FFD0100D16624 /* bzip2.c */,
 				B6BF29FF0A5FFD0100D16624 /* config.h */,
 				B6BF2A000A5FFD0100D16624 /* creator.c */,
@@ -433,6 +436,7 @@
 				B61E31AF0E925C66008097AC /* memory.c in Sources */,
 				B61E31B30E925C73008097AC /* garray.c in Sources */,
 				B6E1F14F14F5124400600EB0 /* pzx_read.c in Sources */,
+				B6168CE71F0BBD83008C99E6 /* buffer.c in Sources */,
 				B6E1F15314F5125500600EB0 /* utilities.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

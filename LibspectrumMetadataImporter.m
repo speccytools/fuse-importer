@@ -501,6 +501,20 @@ process_snap2:(libspectrum_snap *)snap
   if( libspectrum_snap_didaktik80_active( snap ) ) {
     [peripherals addObject:@"Didaktik D80"];
   }
+  if( libspectrum_snap_covox_active( snap ) ) {
+    [peripherals addObject:@"Covox"];
+  }
+  if( libspectrum_snap_multiface_active( snap ) ) {
+    if( libspectrum_snap_multiface_model_one( snap ) ) {
+      [peripherals addObject:@"Multiface One"];
+    }
+    if( libspectrum_snap_multiface_model_128( snap ) ) {
+      [peripherals addObject:@"Multiface 128"];
+    }
+    if( libspectrum_snap_multiface_model_3( snap ) ) {
+      [peripherals addObject:@"Multiface 3"];
+    }
+  }
   if( [peripherals count] ) {
     [attributes setObject:peripherals
                   forKey:@"net_sourceforge_projects_fuse_emulator_Peripherals"];
