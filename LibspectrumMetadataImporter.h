@@ -44,7 +44,7 @@
 - (BOOL) process_dck;
 - (BOOL) process_trd;
 - (BOOL) process_dsk;
-- (BOOL) process_scr;
+- (BOOL) process_screenshot;
 - (BOOL) process_rzx;
 - (BOOL) process_opd;
 - (BOOL) process_plusd;

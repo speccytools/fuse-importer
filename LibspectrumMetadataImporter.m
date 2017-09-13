@@ -443,6 +443,15 @@ process_snap2:(libspectrum_snap *)snap
   }
 
   /* FIXME: Other connected hardware? */
+  if( libspectrum_snap_ulaplus_active( snap ) ) {
+    [peripherals addObject:@"ULAplus"];
+  }
+  if( libspectrum_snap_divmmc_active( snap ) ) {
+    [peripherals addObject:@"DivMMC"];
+  }
+  if( libspectrum_snap_zxmmc_active( snap ) ) {
+    [peripherals addObject:@"ZXMMC"];
+  }
   if( libspectrum_snap_zxatasp_active( snap ) ) {
     [peripherals addObject:@"ZXATASP"];
   }
@@ -590,7 +599,7 @@ process_rzx
 #define HIRES_SCR_SIZE (HICOLOUR_SCR_SIZE + 1)
 
 - (BOOL)
-process_scr
+process_screenshot
 {
   int width;
   NSString *mode;
@@ -791,7 +800,7 @@ process_hdr
     break;
 
   case LIBSPECTRUM_CLASS_SCREENSHOT:
-    retval = [self process_scr];
+    retval = [self process_screenshot];
     break;
 
   case LIBSPECTRUM_CLASS_DISK_PLUS3:

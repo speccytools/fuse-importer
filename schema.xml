@@ -95,5 +95,16 @@
 				net_sourceforge_projects_fuse_emulator_GraphicsMode
             </previewattrs> 
         </type>
+        <type name="net.sourceforge.projects.fuse-emulator.mlt">
+            <allattrs>
+                net_sourceforge_projects_fuse_emulator_GraphicsMode
+            </allattrs>
+            <displayattrs>
+                net_sourceforge_projects_fuse_emulator_GraphicsMode
+            </displayattrs>
+            <previewattrs>
+                net_sourceforge_projects_fuse_emulator_GraphicsMode
+            </previewattrs>
+        </type>
     </types>
 </schema>
