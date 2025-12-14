@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -475,9 +475,12 @@
 		B6B0E2FD08CC65D5001D8411 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
+				DEVELOPMENT_TEAM = 48UV5KV3FB;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -497,14 +500,14 @@
 				INSTALL_PATH = /Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-lbz2",
 					"-lz",
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.sourceforge.projects.fuse-emulator.importer";
+				PRODUCT_BUNDLE_IDENTIFIER = fusex.importer;
 				PRODUCT_NAME = FuseImporter;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -520,6 +523,7 @@
 		B6B0E2FE08CC65D5001D8411 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -533,14 +537,14 @@
 				INSTALL_PATH = /Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-lbz2",
 					"-lz",
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.sourceforge.projects.fuse-emulator.importer";
+				PRODUCT_BUNDLE_IDENTIFIER = fusex.importer;
 				PRODUCT_NAME = FuseImporter;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -556,6 +560,7 @@
 		B6B0E2FF08CC65D5001D8411 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -568,14 +573,14 @@
 				INSTALL_PATH = /Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-lbz2",
 					"-lz",
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.sourceforge.projects.fuse-emulator.importer";
+				PRODUCT_BUNDLE_IDENTIFIER = fusex.importer;
 				PRODUCT_NAME = FuseImporter;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
