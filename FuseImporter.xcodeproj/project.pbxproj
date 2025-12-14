@@ -91,7 +91,7 @@
 				"$(DERIVED_FILE_DIR)/tape_set.c",
 			);
 			runOncePerArchitecture = 0;
-			script = "perl ${SRCROOT}/libspectrum/tape_accessors.pl ${INPUT_FILE_PATH} > ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}.c\nperl ${SRCROOT}/libspectrum/tape_set.pl ${INPUT_FILE_PATH} > ${DERIVED_FILE_DIR}/tape_set.c\n";
+			script = "perl ${SRCROOT}/../libspectrum/tape_accessors.pl ${INPUT_FILE_PATH} > ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}.c\nperl ${SRCROOT}/../libspectrum/tape_set.pl ${INPUT_FILE_PATH} > ${DERIVED_FILE_DIR}/tape_set.c\n";
 		};
 		B6BF2A730A5FFF5200D16624 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -105,7 +105,7 @@
 				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).c",
 			);
 			runOncePerArchitecture = 0;
-			script = "perl ${SRCROOT}/libspectrum/accessor.pl ${INPUT_FILE_PATH} > ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}.c\n";
+			script = "perl ${SRCROOT}/../libspectrum/accessor.pl ${INPUT_FILE_PATH} > ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}.c\n";
 		};
 /* End PBXBuildRule section */
 
@@ -230,7 +230,7 @@
 		08FB77AFFE84173DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B6BF29E00A5FFBE600D16624 /* libspectrum */,
+				B6BF29E00A5FFBE600D16624 /* ../libspectrum */,
 				B60E533B082720EC00F2C004 /* GetMetadataForFile.m */,
 				B6ACE4F1082BE15800B40758 /* GetMetadataForFile.h */,
 				B60E53390827207800F2C004 /* main.m */,
@@ -248,7 +248,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6BF29E00A5FFBE600D16624 /* libspectrum */ = {
+		B6BF29E00A5FFBE600D16624 /* ../libspectrum */ = {
 			isa = PBXGroup;
 			children = (
 				B6687E130A607F1D005D0FDE /* libspectrum.h.in */,
@@ -294,7 +294,7 @@
 				B69D8D481D6B2FB70031BAFC /* zip.h */,
 				B6BF2A190A5FFD0100D16624 /* zxs.c */,
 			);
-			path = libspectrum;
+			path = ../libspectrum;
 			sourceTree = "<group>";
 		};
 		B6BF29F10A5FFC9700D16624 /* myglib */ = {
@@ -497,6 +497,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../libgcrypt/libgcrypt/src",
+					"$(SRCROOT)/../libgcrypt/libgpg-error/src",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
@@ -534,6 +538,10 @@
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../libgcrypt/libgcrypt/src",
+					"$(SRCROOT)/../libgcrypt/libgpg-error/src",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
@@ -570,6 +578,10 @@
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../libgcrypt/libgcrypt/src",
+					"$(SRCROOT)/../libgcrypt/libgpg-error/src",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
