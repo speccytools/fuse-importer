@@ -3,6 +3,10 @@ if( /LIBSPECTRUM_DEFINE_TYPES/ ) {
   $_ = << "CODE";
 #include <stdint.h>
 
+#ifndef	WIN32_DLL
+#define	WIN32_DLL
+#endif
+
 typedef  uint8_t libspectrum_byte;
 typedef   int8_t libspectrum_signed_byte;
 typedef uint16_t libspectrum_word;
