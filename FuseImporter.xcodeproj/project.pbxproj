@@ -55,6 +55,7 @@
 		B6BF2A320A5FFD0100D16624 /* warajevo_read.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF2A160A5FFD0100D16624 /* warajevo_read.c */; };
 		B6BF2A330A5FFD0100D16624 /* z80.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF2A170A5FFD0100D16624 /* z80.c */; };
 		B6BF2A340A5FFD0100D16624 /* zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF2A180A5FFD0100D16624 /* zlib.c */; };
+		74A931C7D6EB840E5648ACCC /* file.c in Sources */ = {isa = PBXBuildFile; fileRef = F1589452094FEF0B950B6A56 /* file.c */; };
 		B6BF2A350A5FFD0100D16624 /* zxs.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF2A190A5FFD0100D16624 /* zxs.c */; };
 		B6BF2A560A5FFE6600D16624 /* snap_accessors.txt in Sources */ = {isa = PBXBuildFile; fileRef = B6BF2A550A5FFE6600D16624 /* snap_accessors.txt */; };
 		B6BF2A580A5FFE7200D16624 /* tape_accessors.txt in Sources */ = {isa = PBXBuildFile; fileRef = B6BF2A570A5FFE7200D16624 /* tape_accessors.txt */; };
@@ -177,6 +178,7 @@
 		B6BF2A160A5FFD0100D16624 /* warajevo_read.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = warajevo_read.c; sourceTree = "<group>"; };
 		B6BF2A170A5FFD0100D16624 /* z80.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = z80.c; sourceTree = "<group>"; };
 		B6BF2A180A5FFD0100D16624 /* zlib.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = zlib.c; sourceTree = "<group>"; };
+		F1589452094FEF0B950B6A56 /* file.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
 		B6BF2A190A5FFD0100D16624 /* zxs.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = zxs.c; sourceTree = "<group>"; };
 		B6BF2A550A5FFE6600D16624 /* snap_accessors.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = snap_accessors.txt; sourceTree = "<group>"; };
 		B6BF2A570A5FFE7200D16624 /* tape_accessors.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = tape_accessors.txt; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				B6BF2A170A5FFD0100D16624 /* z80.c */,
 				B639B7920A6BB2C100927E24 /* z80em.c */,
 				B6BF2A180A5FFD0100D16624 /* zlib.c */,
+				F1589452094FEF0B950B6A56 /* file.c */,
 				B6D696401DD0173100B585FB /* zip.c */,
 				B69D8D481D6B2FB70031BAFC /* zip.h */,
 				B6BF2A190A5FFD0100D16624 /* zxs.c */,
@@ -448,6 +451,7 @@
 				B6BF2A320A5FFD0100D16624 /* warajevo_read.c in Sources */,
 				B6BF2A330A5FFD0100D16624 /* z80.c in Sources */,
 				B6BF2A340A5FFD0100D16624 /* zlib.c in Sources */,
+				74A931C7D6EB840E5648ACCC /* file.c in Sources */,
 				B6BF2A350A5FFD0100D16624 /* zxs.c in Sources */,
 				B639B7930A6BB2C100927E24 /* z80em.c in Sources */,
 				B62C1CD00B761515000BA4E0 /* symbol_table.c in Sources */,
