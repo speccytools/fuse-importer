@@ -28,6 +28,7 @@
 		B6ACE4F2082BE15800B40758 /* GetMetadataForFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B6ACE4F1082BE15800B40758 /* GetMetadataForFile.h */; };
 		B6BF29F90A5FFCC200D16624 /* ghash.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF29F80A5FFCC200D16624 /* ghash.c */; };
 		B6BF29FD0A5FFCD700D16624 /* gslist.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF29FC0A5FFCD700D16624 /* gslist.c */; };
+		9571E569C1BB0DD114ABA33E /* glock.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BD08B9EC5F413722E46E /* glock.c */; };
 		B6BF2A1A0A5FFD0100D16624 /* bzip2.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF29FE0A5FFD0100D16624 /* bzip2.c */; };
 		B6BF2A1B0A5FFD0100D16624 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B6BF29FF0A5FFD0100D16624 /* config.h */; };
 		B6BF2A1C0A5FFD0100D16624 /* creator.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BF2A000A5FFD0100D16624 /* creator.c */; };
@@ -151,6 +152,7 @@
 		B6ACE4F1082BE15800B40758 /* GetMetadataForFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMetadataForFile.h; sourceTree = "<group>"; };
 		B6BF29F80A5FFCC200D16624 /* ghash.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = ghash.c; sourceTree = "<group>"; };
 		B6BF29FC0A5FFCD700D16624 /* gslist.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = gslist.c; sourceTree = "<group>"; };
+		0EE8BD08B9EC5F413722E46E /* glock.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = glock.c; sourceTree = "<group>"; };
 		B6BF29FE0A5FFD0100D16624 /* bzip2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = bzip2.c; sourceTree = "<group>"; };
 		B6BF29FF0A5FFD0100D16624 /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = SOURCE_ROOT; };
 		B6BF2A000A5FFD0100D16624 /* creator.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = creator.c; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			children = (
 				B61E31B20E925C73008097AC /* garray.c */,
 				B6BF29FC0A5FFCD700D16624 /* gslist.c */,
+				0EE8BD08B9EC5F413722E46E /* glock.c */,
 				B6BF29F80A5FFCC200D16624 /* ghash.c */,
 			);
 			path = myglib;
@@ -428,6 +431,7 @@
 				B69709CE082829BC00904D8F /* LibspectrumMetadataImporter.m in Sources */,
 				B6BF29F90A5FFCC200D16624 /* ghash.c in Sources */,
 				B6BF29FD0A5FFCD700D16624 /* gslist.c in Sources */,
+				9571E569C1BB0DD114ABA33E /* glock.c in Sources */,
 				B6BF2A1A0A5FFD0100D16624 /* bzip2.c in Sources */,
 				B6BF2A1C0A5FFD0100D16624 /* creator.c in Sources */,
 				B6BF2A1D0A5FFD0100D16624 /* crypto.c in Sources */,
