@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1101005000000000000008 /* tzx_pzx.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000008 /* tzx_pzx.c */; };
+		F1101005000000000000007 /* tape_text.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000007 /* tape_text.c */; };
+		F1101005000000000000006 /* tap_pzx.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000006 /* tap_pzx.c */; };
+		F1101005000000000000005 /* pzx_write_validate.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000005 /* pzx_write_validate.c */; };
+		F1101005000000000000004 /* pzx_write_playback.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000004 /* pzx_write_playback.c */; };
+		F1101005000000000000003 /* pzx_write_plan.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000003 /* pzx_write_plan.c */; };
+		F1101005000000000000002 /* pzx_write.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000002 /* pzx_write.c */; };
+		F1101005000000000000001 /* pzx.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000001 /* pzx.c */; };
+		F1101005000000000000000 /* csw_write.c in Sources */ = {isa = PBXBuildFile; fileRef = F11010040000000000000000 /* csw_write.c */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		FE9911060000000000000006 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9911070000000000000007 /* AudioToolbox.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -127,6 +136,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F11010040000000000000008 /* tzx_pzx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/tzx_pzx.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000007 /* tape_text.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/tape_text.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000006 /* tap_pzx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/tap_pzx.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000005 /* pzx_write_validate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/pzx_write_validate.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000004 /* pzx_write_playback.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/pzx_write_playback.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000003 /* pzx_write_plan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/pzx_write_plan.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000002 /* pzx_write.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/pzx_write.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000001 /* pzx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/pzx.c; sourceTree = SOURCE_ROOT; };
+		F11010040000000000000000 /* csw_write.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ../libspectrum/csw_write.c; sourceTree = SOURCE_ROOT; };
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		FE9911070000000000000007 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
@@ -461,6 +479,15 @@
 				B62C1CD00B761515000BA4E0 /* symbol_table.c in Sources */,
 				B6D696411DD0173100B585FB /* zip.c in Sources */,
 				B61617260C1CE2980009ADF9 /* csw.c in Sources */,
+				F1101005000000000000008 /* tzx_pzx.c in Sources */,
+				F1101005000000000000007 /* tape_text.c in Sources */,
+				F1101005000000000000006 /* tap_pzx.c in Sources */,
+				F1101005000000000000005 /* pzx_write_validate.c in Sources */,
+				F1101005000000000000004 /* pzx_write_playback.c in Sources */,
+				F1101005000000000000003 /* pzx_write_plan.c in Sources */,
+				F1101005000000000000002 /* pzx_write.c in Sources */,
+				F1101005000000000000001 /* pzx.c in Sources */,
+				F1101005000000000000000 /* csw_write.c in Sources */,
 				B616172A0C1CE2A50009ADF9 /* wav.c in Sources */,
 				FE9911010000000000000001 /* dsnap.c in Sources */,
 				FE9911030000000000000003 /* wav_macos.c in Sources */,

@@ -731,6 +731,9 @@ libspectrum_creator_alloc( void );
 LIBSPECTRUM_API libspectrum_error
 libspectrum_creator_free( libspectrum_creator *creator );
 
+/* Program names are UTF-8, limited to 31 bytes at a character boundary.
+   SZX writes UTF-8; RZX export transliterates to ASCII with '?' fallback.
+   Custom creator data is binary and remains unchanged. */
 LIBSPECTRUM_API libspectrum_error
 libspectrum_creator_set_program( libspectrum_creator *creator,
 				 const char *program );
@@ -1242,6 +1245,7 @@ typedef enum libspectrum_tape_type {
   LIBSPECTRUM_TAPE_BLOCK_PULSES,
   LIBSPECTRUM_TAPE_BLOCK_PURE_DATA,
   LIBSPECTRUM_TAPE_BLOCK_RAW_DATA,
+  LIBSPECTRUM_TAPE_BLOCK_TZX_CSW = 0x18,
 
   LIBSPECTRUM_TAPE_BLOCK_GENERALISED_DATA = 0x19,
 
@@ -1312,6 +1316,10 @@ typedef enum libspectrum_tape_state_type {
 /* Routines to manipulate tape blocks */
 LIBSPECTRUM_API libspectrum_tape_block*
 libspectrum_tape_block_alloc( libspectrum_tape_type type );
+
+/* Ordinary tape metadata text/texts is UTF-8. Setters accept
+   UTF-8; readers/writers convert TZX CP1252 with lossy substitution.
+   CUSTOM identifiers and binary payloads are not converted. */
 LIBSPECTRUM_API libspectrum_error
 libspectrum_tape_block_free( libspectrum_tape_block *block );
 LIBSPECTRUM_API libspectrum_tape_type
@@ -1377,6 +1385,12 @@ WIN32_DLL libspectrum_dword libspectrum_tape_block_pulse_length( libspectrum_tap
 WIN32_DLL libspectrum_error libspectrum_tape_block_set_pulse_length( libspectrum_tape_block *block, libspectrum_dword pulse_length );
 WIN32_DLL libspectrum_dword libspectrum_tape_block_scale( libspectrum_tape_block *block );
 WIN32_DLL libspectrum_error libspectrum_tape_block_set_scale( libspectrum_tape_block *block, libspectrum_dword scale );
+WIN32_DLL libspectrum_dword libspectrum_tape_block_sample_rate( libspectrum_tape_block *block );
+WIN32_DLL libspectrum_error libspectrum_tape_block_set_sample_rate( libspectrum_tape_block *block, libspectrum_dword sample_rate );
+WIN32_DLL libspectrum_dword libspectrum_tape_block_csw_pulses( libspectrum_tape_block *block );
+WIN32_DLL libspectrum_error libspectrum_tape_block_set_csw_pulses( libspectrum_tape_block *block, libspectrum_dword csw_pulses );
+WIN32_DLL libspectrum_byte libspectrum_tape_block_csw_compression( libspectrum_tape_block *block );
+WIN32_DLL libspectrum_error libspectrum_tape_block_set_csw_compression( libspectrum_tape_block *block, libspectrum_byte csw_compression );
 WIN32_DLL libspectrum_dword libspectrum_tape_block_pulse_lengths( libspectrum_tape_block *block, size_t idx );
 WIN32_DLL libspectrum_error libspectrum_tape_block_set_pulse_lengths( libspectrum_tape_block *block, libspectrum_dword *pulse_lengths );
 WIN32_DLL size_t libspectrum_tape_block_pulse_repeats( libspectrum_tape_block *block, size_t idx );
